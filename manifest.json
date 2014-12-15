@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Basecamp markdown",
+  "description": "Basecamp markdown parser",
+  "version": "1.0",
+  "icons": {
+    "128": "assets/icon_128.png"
+  },
+  "permissions": ["tabs", "*://*.basecamp.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.basecamp.com/*"],
+      "js": ["bundle.js"]
+    }
+  ]
+}
